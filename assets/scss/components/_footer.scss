@@ -1,10 +1,13 @@
 .footer {
+  margin: 0px 60px 0px 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
-  padding: 120px 0 120px;
+  padding: 50px 0 120px;
   overflow: hidden;
   @include mobile {
     padding: 120px 0 50px;
   }
+
   &-subscribe {
     &-title {
       h2 {
