@@ -115,7 +115,6 @@ $(document).ready(function () {
   $(".footer-tooltip").tooltip();
 });
 
-/*
 // sticky nav
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
@@ -124,4 +123,3 @@ $(window).on("scroll", function () {
     $("nav").removeClass("nav-bg");
   }
 });
-*/
