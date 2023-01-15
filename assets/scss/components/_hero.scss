@@ -6,10 +6,10 @@
     text-align: center;
   }
   @include tablet {
-    padding: 120px 0 80px;
+    padding: 0px 0 80px;
   }
   @include mobile {
-    padding: 0px;
+    padding: 0px 0px 100px 0px;
   }
   &-shape {
     position: absolute;
@@ -85,16 +85,16 @@
   }
 
   &-image {
-    margin: -40px;
+    margin: 0px;
     img {
       max-width: 100%;
     }
     @include desktop {
       margin: 0 auto 40px;
-      width: 70%;
+      width: 100%;
     }
     @include tablet {
-      width: 80%;
+      width: 100%;
     }
     @include mobile {
       width: 100%;
