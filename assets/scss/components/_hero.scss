@@ -9,7 +9,8 @@
     padding: 0px 0 80px;
   }
   @include mobile {
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 40px 0px;
+    margin-top: -20px;
   }
   &-shape {
     position: absolute;
@@ -33,6 +34,11 @@
   }
 
   &-content {
+    padding-right: 100px;
+    @include desktop-lg {
+      padding-right: 0px;
+    }
+
     &-subtitle {
       font-size: 14px;
       font-weight: 400;
@@ -44,18 +50,44 @@
     }
 
     h1 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
       margin-bottom: 25px;
+      @include desktop-lg {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+      @include desktop-xl {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 25px;
+      }
       @include tablet {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 650;
+      }
+      @include mobile {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 650;
+        margin-bottom: 20px;
       }
     }
 
     p {
-      font-size: 17px;
-      line-height: 30px;
-      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      font-weight: 300;
       margin-bottom: 40px;
+      color: rgb(109, 109, 113);
+      @include desktop-lg {
+        font-size: 22px;
+        line-height: 30px;
+      }
       @include mobile {
         font-size: 16px;
         line-height: 28px;

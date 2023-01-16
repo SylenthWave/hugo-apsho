@@ -42,7 +42,7 @@
         margin-bottom: -30px;
         a {
           font-size: 18px;
-          font-weight: 500;
+          font-weight: 400;
           display: block;
           color: $text-color-dark;
           text-decoration: none;
@@ -57,6 +57,7 @@
         font-size: 14px;
         line-height: 18px;
         color: rgba($color: #96979a, $alpha: 1.0);
+        font-weight: 300;
       }
       .post-author {
         display: flex;
@@ -144,7 +145,7 @@
       margin-top: 0px;
     }
     &-post {
-      padding: 0px 10px 50px;
+      padding: 20px 10px 50px;
       @include mobile {
         padding: 20px;
       }
@@ -163,9 +164,13 @@
           width: 100%;
         }
       }
+      h1 {
+        font-size: 32px;
+        font-weight: 800;
+      }
       h2 {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 28px;
+        font-weight: 650;
         text-align: left;
         margin-bottom: 20px;
         @include desktop {
@@ -181,6 +186,12 @@
       }
       ul {
         padding-left: 20px;
+      }
+      p,ul {
+        color: rgb(49, 50, 52);
+        font-size: medium;
+        font-weight: 300;
+        line-height: 28px;
       }
     }
     &-header {
